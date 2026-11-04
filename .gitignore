@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.secret
+*.pem
+*.key
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+junit/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Output & Artifacts
+reports/
+*.log

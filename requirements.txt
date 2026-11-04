@@ -1,0 +1,19 @@
+# Core Processing & Validation
+pydantic>=2.0.0
+pyyaml>=6.0.1
+pypdf>=4.0.0
+pdfplumber>=0.10.0
+
+# Graph & Workflow Orchestration
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# Optional LLM Integration (Free-tier Gemini)
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# Web Dashboard & Interface
+streamlit>=1.35.0
+
+# Testing & Quality Assurance
+pytest>=8.0.0
