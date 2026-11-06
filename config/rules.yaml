@@ -1,0 +1,34 @@
+# Company rules, from task1-procurement/company-rules.md.
+# Change a limit or a severity here and rerun. No code change is needed.
+# To add a rule: add it here and write its check in core/rules.py.
+
+limits:
+  price_over_max_reject_percent: 3
+  advance_max_percent: 20
+  delivery_max_days: 45
+  delivery_auto_ok_max_days: 30
+  quantity_tolerance_percent: 5
+  payment_min_days: 30
+  payment_max_days: 60
+  vat_percent: 15
+  validity_min_days: 30
+  penalty_min_percent: 0.5
+
+rules:
+  # Reject
+  - {id: price_over_limit, severity: reject, title: "Unit price limit"}
+  - {id: advance_too_high, severity: reject, title: "Advance payment limit"}
+  - {id: no_penalty_clause, severity: reject, title: "Late-delivery penalty clause"}
+  - {id: tin_bin_missing, severity: reject, title: "Supplier TIN and BIN"}
+  - {id: delivery_too_late, severity: reject, title: "Latest delivery limit"}
+
+  # Needs a person to check
+  - {id: request_match, severity: review, title: "Matches the purchase request"}
+  - {id: price_above_max, severity: review, title: "Unit price against maximum"}
+  - {id: quantity_differs, severity: review, title: "Quantity against request"}
+  - {id: payment_terms, severity: review, title: "Payment terms"}
+  - {id: delivery_needs_check, severity: review, title: "Delivery time"}
+  - {id: vat_not_separate, severity: review, title: "VAT shown separately"}
+  - {id: numbers_add_up, severity: review, title: "Numbers add up"}
+  - {id: validity_too_short, severity: review, title: "Quotation validity"}
+  - {id: penalty_too_low, severity: review, title: "Penalty rate and basis"}

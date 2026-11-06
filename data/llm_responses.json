@@ -1,0 +1,422 @@
+{
+  "16004f1ed77c63b64dd8e7ceba3bf6d600b42e57fad2ea3c1daac83c18f73fa3": {
+    "advance_percent": {
+      "quote": "40% advance payable with the purchase order.",
+      "status": "found",
+      "value": "40"
+    },
+    "bin": {
+      "quote": "BIN: 000570541-0101",
+      "status": "found",
+      "value": "000570541-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 25 days of PO.",
+      "status": "found",
+      "value": "25"
+    },
+    "payment_days": {
+      "quote": "balance 60% within 30 days of delivery.",
+      "status": "found",
+      "value": "30"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty of 1% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty of 1% of order value per week.",
+      "status": "found",
+      "value": "1"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 105458053391",
+      "status": "found",
+      "value": "105458053391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "20fa98ac44d0dae01afb0400eee832d99547bcbb9bede16a14d21ec0b9e91662": {
+    "advance_percent": {
+      "quote": "No advance payment required.",
+      "status": "found",
+      "value": "0"
+    },
+    "bin": {
+      "quote": "BIN: 000770741-0101",
+      "status": "found",
+      "value": "000770741-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 22 days of PO.",
+      "status": "found",
+      "value": "22"
+    },
+    "payment_days": {
+      "quote": "Payment within 45 days of delivery.",
+      "status": "found",
+      "value": "45"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty: 0.5% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty: 0.5% of order value per week.",
+      "status": "found",
+      "value": "0.5"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 107458073391",
+      "status": "found",
+      "value": "107458073391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 35 days from the date above.",
+      "status": "found",
+      "value": "35"
+    }
+  },
+  "2155ce596cb3cb0b7a04b41c81d5b54847aa69e9e815e698d91e7f77df31fa2a": {
+    "advance_percent": {
+      "quote": "10% advance payable with the purchase order.",
+      "status": "found",
+      "value": "10"
+    },
+    "bin": {
+      "quote": null,
+      "status": "absent",
+      "value": null
+    },
+    "delivery_days": {
+      "quote": "Delivery within 18 days of PO.",
+      "status": "found",
+      "value": "18"
+    },
+    "payment_days": {
+      "quote": "Payment within 30 days of delivery.",
+      "status": "found",
+      "value": "30"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty of 0.5% per week of delay.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty of 0.5% per week of delay.",
+      "status": "found",
+      "value": "0.5"
+    },
+    "tin": {
+      "quote": null,
+      "status": "absent",
+      "value": null
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "2a1722bdfcfbe72ac8efbb942b8348834c61821b0cdd9a97d542d5a2581473a3": {
+    "advance_percent": {
+      "quote": "5% advance payable with the purchase order.",
+      "status": "found",
+      "value": "5"
+    },
+    "bin": {
+      "quote": "BIN: 000970941-0101",
+      "status": "found",
+      "value": "000970941-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 4 weeks of PO.",
+      "status": "found",
+      "value": "28"
+    },
+    "payment_days": {
+      "quote": "Payment within 30 to 90 days as agreed by bothparties.",
+      "status": "found",
+      "value": "90"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "0.5"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 109458093391",
+      "status": "found",
+      "value": "109458093391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "5a4128f094709e6fbcfdf882e66d07d94dee55449f80c70bc5991f1573d84f84": {
+    "advance_percent": {
+      "quote": "10% advance payable with the purchase order.",
+      "status": "found",
+      "value": "10"
+    },
+    "bin": {
+      "quote": "BIN: 001071041-0101",
+      "status": "found",
+      "value": "001071041-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 60 days of PO.",
+      "status": "found",
+      "value": "60"
+    },
+    "payment_days": {
+      "quote": "Payment within 45 days of delivery.",
+      "status": "found",
+      "value": "45"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "0.5"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 110458103391",
+      "status": "found",
+      "value": "110458103391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "5d53a6aa10ea688d40aeaa23e22f6092962b4239f370d4e332920b41fd67be8f": {
+    "advance_percent": {
+      "quote": "15% advance payable with the purchase order.",
+      "status": "found",
+      "value": "15"
+    },
+    "bin": {
+      "quote": "BIN: 000370341-0101",
+      "status": "found",
+      "value": "000370341-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 20 days of PO.",
+      "status": "found",
+      "value": "20"
+    },
+    "payment_days": {
+      "quote": "Balance within 40 days of delivery.",
+      "status": "found",
+      "value": "40"
+    },
+    "penalty_basis": {
+      "quote": "Delay in delivery will attract a penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Delay in delivery will attract a penalty of 0.5% of order value per week.",
+      "status": "found",
+      "value": "0.5"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 103458033391",
+      "status": "found",
+      "value": "103458033391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "7be1a53e380fed8c381c378fed29f3a3426c943f904e5653e41b1ecbd342f61c": {
+    "advance_percent": {
+      "quote": "No advance payment required.",
+      "status": "found",
+      "value": "0"
+    },
+    "bin": {
+      "quote": "BIN: 000270241-0101",
+      "status": "found",
+      "value": "000270241-0101"
+    },
+    "delivery_days": {
+      "quote": "Goods will be delivered at your factory within 21 days from the date of PO.",
+      "status": "found",
+      "value": "21"
+    },
+    "payment_days": {
+      "quote": "Full payment within 30 days of delivery.",
+      "status": "found",
+      "value": "30"
+    },
+    "penalty_basis": {
+      "quote": "For late delivery the supplier shall pay 0.75% of the order value per week of delay.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "For late delivery the supplier shall pay 0.75% of the order value per week of delay.",
+      "status": "found",
+      "value": "0.75"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 102458023391",
+      "status": "found",
+      "value": "102458023391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "b057c090b2c4d38f1e59262f10ab605986095ad15924d32d9e838aa1db0a0d7e": {
+    "advance_percent": {
+      "quote": "10% advance payable with the purchase order.",
+      "status": "found",
+      "value": "10"
+    },
+    "bin": {
+      "quote": "BIN: 000170141-0101",
+      "status": "found",
+      "value": "000170141-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 24 days of receiving the purchase order.",
+      "status": "found",
+      "value": "24"
+    },
+    "payment_days": {
+      "quote": "Balance payable within 45 days after delivery and\nacceptance of goods.",
+      "status": "found",
+      "value": "45"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty: 1% of order value for each full week of delay.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty: 1% of order value for each full week of delay.",
+      "status": "found",
+      "value": "1"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 101458013391",
+      "status": "found",
+      "value": "101458013391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 45 days from the date above.",
+      "status": "found",
+      "value": "45"
+    }
+  },
+  "b7dcbeff1d67db70ab6f72a26c9eb3b97d075d4a3fadc03f649e14c2394155d4": {
+    "advance_percent": {
+      "quote": "10% advance payable with the purchase order.",
+      "status": "found",
+      "value": "10"
+    },
+    "bin": {
+      "quote": "BIN: 000670641-0101",
+      "status": "found",
+      "value": "000670641-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 27 days of PO.",
+      "status": "found",
+      "value": "27"
+    },
+    "payment_days": {
+      "quote": "Balance within 60 days of delivery.",
+      "status": "found",
+      "value": "60"
+    },
+    "penalty_basis": {
+      "quote": null,
+      "status": "absent",
+      "value": null
+    },
+    "penalty_percent": {
+      "quote": null,
+      "status": "absent",
+      "value": null
+    },
+    "tin": {
+      "quote": "Supplier TIN: 106458063391",
+      "status": "found",
+      "value": "106458063391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 30 days from the date above.",
+      "status": "found",
+      "value": "30"
+    }
+  },
+  "da2a4148e6c5afcc2888ba37169d43bbddcf9cacc9435211024b90a8604581aa": {
+    "advance_percent": {
+      "quote": "10% advance payable with the purchase order.",
+      "status": "found",
+      "value": "10"
+    },
+    "bin": {
+      "quote": "BIN: 000470441-0101",
+      "status": "found",
+      "value": "000470441-0101"
+    },
+    "delivery_days": {
+      "quote": "Delivery within 28 days of PO.",
+      "status": "found",
+      "value": "28"
+    },
+    "payment_days": {
+      "quote": "Payment within 30 days after delivery.",
+      "status": "found",
+      "value": "30"
+    },
+    "penalty_basis": {
+      "quote": "Late delivery penalty of 0.6% of order value per week.",
+      "status": "found",
+      "value": "order_value"
+    },
+    "penalty_percent": {
+      "quote": "Late delivery penalty of 0.6% of order value per week.",
+      "status": "found",
+      "value": "0.6"
+    },
+    "tin": {
+      "quote": "Supplier TIN: 104458043391",
+      "status": "found",
+      "value": "104458043391"
+    },
+    "validity_days": {
+      "quote": "This quotation is valid for 40 days from the date above.",
+      "status": "found",
+      "value": "40"
+    }
+  }
+}

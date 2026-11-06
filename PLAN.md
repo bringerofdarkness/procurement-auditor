@@ -48,45 +48,52 @@ Gemini never does math and never sets a verdict.
 
 ## Folder layout
 ```
-config/rules.yaml
-core/        models, pdf_reader, extractors, math_checks, rules, graph, llm
-data/        supplied samples
-tests/       unit, samples, altered cases
-app.py
+config/rules.yaml      limits and severities
+core/                  models, pdf_reader, extractors, llm, purchase_request, math_checks, rules, graph
+data/                  expected verdicts, saved Gemini responses
+scripts/               evaluate, record_llm_responses
+task1-procurement/     samples from BIAI, unchanged
+tests/                 samples, altered cases, Gemini safety, workflow, app
+app.py                 Streamlit screen
+api.py                 FastAPI routes
 ```
 
 ## Build checklist
 
 ### 1. Core
-- [ ] Project setup and requirements
-- [ ] Pydantic schemas
-- [ ] PDF text and table reader
-- [ ] Regex clause extractor
-- [ ] Math and request comparison
-- [ ] `rules.yaml` and rule engine with three states
-- [ ] Quote verification
+- [x] Project setup and requirements
+- [x] Pydantic schemas
+- [x] PDF text reader
+- [x] Regex clause extractor
+- [x] Math and request comparison
+- [x] `rules.yaml` and rule engine with three states
+- [x] Quote verification
 
 ### 2. Pipeline
-- [ ] LangGraph nodes and edges
-- [ ] `decide` logic
-- [ ] Human pause and resume
-- [ ] Per-step trace
+- [x] LangGraph nodes and edges
+- [x] `decide` logic
+- [x] Human pause and resume
+- [x] Per-step trace
 
 ### 3. LLM
-- [ ] Gemini client with structured output
-- [ ] Regex vs Gemini comparison
-- [ ] Rate limit, timeout and bad JSON handling
-- [ ] Saved responses and `replay` mode
+- [x] Gemini client with structured output
+- [x] Regex vs Gemini comparison
+- [x] Rate limit, timeout and bad JSON handling
+- [x] Saved responses and `replay` mode
 
 ### 4. App
-- [ ] Batch results and score
-- [ ] Pack details with quotes and differences
-- [ ] Human review screen
-- [ ] Rule controls for live changes
-- [ ] PDF upload (optional)
+- [x] Batch results and score
+- [x] Pack details with quotes and differences
+- [x] Human review screen
+- [x] Rule controls for live changes
+- [x] PDF upload (optional)
 - [ ] Deploy to Streamlit Cloud (optional)
 
-### 5. Submission
+### 5. FastAPI (local only)
+- [x] `/health`, `/audits`, `/audits/{id}`, `/audits/{id}/review`
+- [x] Route tests
+
+### 6. Submission
 - [ ] README with run steps
 - [ ] One-page note
 - [ ] Loom, 5 minutes or less
@@ -94,7 +101,7 @@ app.py
 - [ ] Live-change practice
 
 ## Test plan
-Run: `pytest -v`
+Run: `pytest -v` (all tests) and `python -m scripts.evaluate` (sample score)
 
 **1. Sample files.** BIAI sent no answer key, so these are our own reading of the rules.
 
@@ -112,29 +119,29 @@ Run: `pytest -v`
 | 10 | Reject | Delivery 60 days; VAT not separate |
 
 **2. Unit and altered cases** (kept separate; not counted in the 10/10 score)
-- [ ] Limits: price exactly 3%; quantity exactly 5%; delivery 30, 31, 45, 46; validity 29, 30; advance 20, 21; penalty 0.4, 0.5
-- [ ] Wording: "4 weeks"; "No advance"; reworded penalty clause
-- [ ] Multiple findings are all reported (Packs 09, 10)
-- [ ] Empty or no-text PDF → Review
-- [ ] Unknown item or wrong PR → Review
-- [ ] Unreadable penalty clause → Review, not Reject
-- [ ] Fake quote from LLM → Review
-- [ ] Gemini failure, 429 or bad JSON → no crash, safe result
-- [ ] Missing field never leads to Approve
+- [x] Limits: price exactly 3%; quantity exactly 5%; delivery 30, 31, 45, 46; validity 29, 30; advance 20, 21; penalty 0.4, 0.5
+- [x] Wording: "4 weeks"; "No advance"; reworded penalty clause
+- [x] Multiple findings are all reported (Packs 09, 10)
+- [x] Empty or no-text PDF → Review
+- [x] Unknown item or wrong PR → Review
+- [x] Unreadable penalty clause → Review, not Reject
+- [x] Fake quote from LLM → Review
+- [x] Gemini failure, 429 or bad JSON → no crash, safe result
+- [x] Missing field never leads to Approve
 
 **3. LLM**
-- [ ] Compare regex-only vs hybrid on altered cases
-- [ ] Run live 3 times and check verdicts stay the same
+- [x] Compare regex-only vs hybrid on altered cases
+- [x] Run live 3 times and check verdicts stay the same
 
 **4. End to end**
 - [ ] Fresh clone, follow README, works with no key
-- [ ] Pause on a Review pack, resume, decision recorded
-- [ ] Change a threshold and see the verdict change
-- [ ] Move a rule's severity and see the verdict change
-- [ ] Add a new rule and rerun
+- [x] Pause on a Review pack, resume, decision recorded
+- [x] Change a threshold and see the verdict change
+- [x] Move a rule's severity and see the verdict change
+- [x] Add a new rule and rerun
 
 ## Done means
-- [ ] 10/10 on samples
-- [ ] All tests pass
+- [x] 10/10 on samples
+- [x] All tests pass
 - [ ] Every verdict has reasons and quotes
 - [ ] Known weaknesses listed in the note
