@@ -39,3 +39,11 @@ Thumbs.db
 # Output & Artifacts
 reports/
 *.log
+
+# Local planning, editor tools and scratch files (not part of the submission)
+PROJECT_MASTER_GUIDE.md
+PLAN.md
+BIAI-AI-Engineer-Round2-Brief.md
+.agents/
+.claude/
+/*.pdf
