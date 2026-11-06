@@ -6,6 +6,8 @@ An AI system that checks supplier quotations for a garment company, step by step
 
 **How every part works, in plain words:** [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
 
+**How it was tested, with full results:** [docs/TESTING.md](docs/TESTING.md)
+
 ---
 
 ## The problem
@@ -211,7 +213,7 @@ pytest -v                      # all 118 tests
 python -m scripts.evaluate     # score on the 10 samples
 ```
 
-`scripts.evaluate` uses saved Gemini responses by default. Add `offline` for regex only, or `live` for live Gemini.
+`scripts.evaluate` uses saved Gemini responses by default. Add `offline` for regex only, or `live` for live Gemini. Full test details and results: [docs/TESTING.md](docs/TESTING.md).
 
 ### Use live Gemini (optional)
 
@@ -268,7 +270,7 @@ scripts/
   record_llm_responses.py  Save new Gemini responses
 task1-procurement/         Sample files from BIAI, unchanged
 tests/                     118 automated tests
-docs/                      Full explanation and screenshots
+docs/                      How it works, how it was tested, screenshots
 ```
 
 ---
